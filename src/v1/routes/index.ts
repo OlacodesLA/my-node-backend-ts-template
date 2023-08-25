@@ -22,7 +22,7 @@ glob
     cwd: cwdPath,
     ignore: ignoreFile,
   })
-  .forEach(async (file) => {
+  .forEach(async (file: any) => {
     const filePath = path.join(cwdPath, file);
 
     const fileRoutes = await import(filePath);

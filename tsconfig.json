@@ -17,18 +17,8 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": ["./src/*"],
-      "@@/*": ["./*"]
-    }
+    "skipLibCheck": true
   },
-  "include": [
-    "./src/**/*.tsx",
-    "./src/**/*.ts",
-    "./**/*.ts",
-    "*.env",
-    "src/v1/utils/ErrorHandler"
-  ],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "./**/*.ts", "*.env"],
   "exclude": ["node_modules", "test/**/*.ts"]
 }
