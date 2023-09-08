@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { clientResponse } from "../../helpers/response";
 import Logger from "../../libs/logger";
 
-const testController = async (req: Request, res: Response) => {
+const userController = async (req: Request, res: Response) => {
   try {
     // Return response
     clientResponse(res, 201, {
@@ -15,4 +15,4 @@ const testController = async (req: Request, res: Response) => {
   }
 };
 
-export { testController };
+export { userController };

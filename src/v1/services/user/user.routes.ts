@@ -1,14 +1,13 @@
 import { Router } from "express";
 import express, { NextFunction, Request, Response } from "express";
-import { ErrorCode, ErrorException } from "@/v1/utils";
-import { testController } from "./test.controller";
+import {userController } from "./user.controller";
 
 const router = Router();
 //Test Route
-router.get("/", testController);
+router.get("/", userController);
 
 export default {
-  baseUrl: "/",
+  baseUrl: "/user",
   router,
   auth: false,
 };
