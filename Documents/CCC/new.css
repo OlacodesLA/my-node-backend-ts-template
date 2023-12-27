@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0066ff;
+  --background-overlay: rgb(66, 66, 66);
+}
+
+.new-heart {
+  background-image: url("./images/21.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* max-width: 1600px; */
+}
+
+.heart-container h1 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: 2px underline;
+}
+.heart-container hr {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hearted,
+.hearted-2 {
+  display: flex;
+  width: 85%;
+  /* flex-direction: column; */
+  max-width: 1170px;
+  margin: 0 auto;
+  gap: 40px;
+  font-family: "Open Sans", sans-serif;
+}
+.hearted strong {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-side {
+  padding-top: 10px;
+}
+@media (max-width: 768px) {
+  .hearted {
+    flex-direction: column;
+  }
+  .second-side {
+    padding-top: 0;
+  }
+  .heart-container h1 {
+    font-size: 40px;
+  }
+}
+
+.hearted-2-bg {
+  background-color: #0066ff;
+  border-radius: 0.5rem;
+  margin: 40px 10px 40px 10px;
+  box-shadow: 0 10px 30px rgba(56, 125, 255, 0.3);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.07));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.07));
+}
+
+.hearted section p {
+  word-break: break-all;
+  text-indent: 50px;
+}
+
+.hearted-2 {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 40px 0;
+  gap: 70px;
+  color: #fff;
+}
+
+.hearted-2 img {
+  /* width: 600px; */
+  height: 300px;
+}
+
+.hearted-2 p h3 {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+
+  padding-bottom: 20px;
+}
+
+.hearted-2 p {
+  word-spacing: 0.3rem;
+}
+
+.hearted-2 figcaption {
+  font-size: 12px;
+}
+
+.hearted-3 {
+  color: #000;
+  overflow: visible;
+}
+.hearted-3 ul {
+  padding-left: 5px;
+  list-style: url("../../assets/ccc-3.png");
+  list-style-position: inside;
+}
+
+.hearted-3 li {
+  font-size: 17px;
+  word-spacing: 0.15rem;
+  line-height: 30px;
+}
+
+.hearted-3-bg {
+  margin: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px rgba(56, 125, 255, 0.3);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.07));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.07));
+}
+
+@media (max-width: 990px) {
+  .hearted-2 img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 899px) {
+  .hearted-2 {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hearted-3 {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 385px) {
+  .hearted-2 img {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .hearted-2 p h3 {
+    font-size: 25px;
+  }
+}
+
+/*Footer*/

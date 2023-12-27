@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    font-family: "Clash Display", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .text {
+    background-color: #111;
+    width: 10px;
+    height: 10px;
+  }
+
+  body {
+    background-color: #fff;
+  }
+
+  .inverted-radius {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-bottom-right-radius: 20px;
+  }
+
+  .inverted-radius::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -16px -16px 0 #fff;
+    @apply bg-green-100;
+  }
+
+  .inverted-radius::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: -16px -16px 0 #fff;
+    @apply bg-transparent;
+  }
+
+  .base-page-size {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: #000;
+    color: #ffffff;
+  }
+
+  .mask {
+    mask-image: url("../public/assets/mask.svg");
+    background-color: #e7224c;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    color: #ffffff;
+  }
+
+  .cursor {
+    background-color: #111;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .header {
+    padding: 30px;
+    position: fixed;
+    right: -15px;
+    z-index: 999;
+  }
+  .burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #455ce9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger::after,
+  .burger::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  .burger::after {
+    top: -5px;
+  }
+
+  .burger::before {
+    top: 5px;
+  }
+
+  .burgerActive::after {
+    transform: rotate(45deg);
+    top: -1px;
+  }
+
+  .burgerActive::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+  .burger {
+    width: 100%;
+  }
+
+  .menu {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: white;
+    width: 100vw;
+  }
+  .menu-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 40px;
+  }
+
+  .svgCurve {
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    /* fill: rgb(41, 41, 41); */
+    stroke: none;
+    @apply fill-gray-950;
+  }
+}

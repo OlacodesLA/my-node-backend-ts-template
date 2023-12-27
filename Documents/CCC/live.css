@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&display=swap");
+.all-live {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px 50px; */
+  overflow: hidden;
+  color: #fff;
+  font-family: "Sora", sans-serif;
+  justify-content: center;
+}
+
+.all-live:after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 900px;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background: url(./images/liveimg.webp) no-repeat center;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  background-color: #272727;
+  background-blend-mode: overlay;
+  z-index: -1;
+}
+
+.live-container {
+  z-index: 2;
+}
+.live-con {
+  text-align: center;
+}
+
+.live-con iframe {
+  width: 500px;
+  height: 300px;
+}
+
+.live-con span {
+  font-size: 50px;
+}
+
+.live-con h1:first-child {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.live-con p:nth-child(1) {
+  font-size: 40px;
+}
+
+.live-con h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.live-count {
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.live-count h1 {
+  font-size: 50px;
+}
+
+.live-count span {
+  display: flex;
+}
+
+.live-button {
+  background: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border-color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.live-button:hover {
+  background-color: #284257;
+}
+
+.live-butt {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.live-links {
+  display: flex;
+  gap: 140px;
+
+  justify-content: center;
+}
+
+.live-links .fab {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.live-butt a,
+.live-butt a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .live-count {
+    width: 75vw;
+  }
+}
+@media (max-width: 768px) {
+  .live-count {
+    width: 85vw;
+  }
+  .live-con iframe {
+    width: 450px;
+  }
+}
+@media (max-width: 520px) {
+  .live-count {
+    width: 95vw;
+    gap: 10px;
+  }
+  .live-con iframe {
+    width: 400px;
+  }
+}
+@media (max-width: 430px) {
+  .live-con h1:first-child {
+    font-size: 30px;
+  }
+  .live-con iframe {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media (max-width: 458px) {
+  .live-count {
+    width: 100vw;
+  }
+  .live-count h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .live-con iframe {
+    width: 300px;
+    height: 220px;
+  }
+}
